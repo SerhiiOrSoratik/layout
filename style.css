@@ -168,7 +168,7 @@ footer {
   }
 
   .skills-container p {
-    line-height: 25px
+    line-height: 25px;
   }
 
   .left li:nth-child(1) {
@@ -248,6 +248,10 @@ footer {
     padding-bottom: 24.5px;
   }
 
+  .dekstop-portfolio-container {
+    display: none;
+  }
+
   .images {
     width: 308px;
     height: 196px;
@@ -325,10 +329,9 @@ footer {
   }
 }
 
-
 @media (min-width: 1001px) {
-
-  h2, p {
+  h2,
+  p {
     padding-left: 165px;
   }
 
@@ -391,27 +394,27 @@ footer {
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
-    }
-  
-    header a:link {
-      color: #ffffff;
-    }
-  
-    header a:visited {
-      color: #ffffff;
-    }
-  
-    header a:focus {
-      color: #ffffff;
-    }
-    
-    header a:hover {
-      color: #ffffff;
-    }
-    
-    header a:active {
-      color: #ffffff;
-    }
+  }
+
+  header a:link {
+    color: #ffffff;
+  }
+
+  header a:visited {
+    color: #ffffff;
+  }
+
+  header a:focus {
+    color: #ffffff;
+  }
+
+  header a:hover {
+    color: #ffffff;
+  }
+
+  header a:active {
+    color: #ffffff;
+  }
 
   /* about */
   .about {
@@ -463,7 +466,7 @@ footer {
 
   .skills-container p {
     padding-left: 0;
-    line-height: 25px
+    line-height: 25px;
   }
 
   .left li:nth-child(1n) {
@@ -482,7 +485,6 @@ footer {
   }
 
   .right li:nth-child(even) {
-
     margin-bottom: 20px;
   }
 
@@ -521,11 +523,18 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-right: 165px;
+    padding-bottom: 145px;
+  }
+
+  .dekstop-portfolio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .images {
-    width: 520px;
-    height: 520px;
+    width: 635px;
+    height: 390px;
   }
 
   .portfolio h2 {
@@ -562,6 +571,21 @@ footer {
     padding-top: 12.5px;
     width: 255px;
     height: 144px;
+  }
+
+  .shevron-div {
+    display: flex;
+    width: 52px;
+    padding-left: 190px;
+    justify-content: space-between;
+  }
+
+  .shevron-div img {
+    cursor: pointer;
+  }
+
+  .left-shevron {
+    padding-right: 14px;
   }
 
   /* footer */
@@ -609,6 +633,7 @@ footer {
     margin-bottom: 14px;
     width: 25%;
     padding-right: 302;
+    cursor: pointer;
   }
 
   footer a {
