@@ -214,7 +214,7 @@ footer {
 
   .right li:nth-child(6) {
     line-height: 25px;
-    margin-bottom: 0;
+    margin-bottom: 25px;
   }
 
   .progress-bar {
@@ -248,7 +248,15 @@ footer {
     padding-bottom: 24.5px;
   }
 
+  .dekstop-portfolio-text {
+    display: none;
+  }
+
   .dekstop-portfolio-container {
+    display: none;
+  }
+
+  .shevron-div {
     display: none;
   }
 
@@ -532,6 +540,10 @@ footer {
     justify-content: space-between;
   }
 
+  .portfolio-text {
+    display: none;
+  }
+
   .images {
     width: 635px;
     height: 390px;
@@ -576,6 +588,7 @@ footer {
   .shevron-div {
     display: flex;
     width: 52px;
+    padding-top: 235px;
     padding-left: 190px;
     justify-content: space-between;
   }
@@ -590,7 +603,7 @@ footer {
 
   /* footer */
   footer {
-    height: 528px;
+    height: 540px;
   }
 
   footer h2 {
