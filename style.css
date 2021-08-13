@@ -13,16 +13,111 @@ main {
   color: #333333;
 }
 
+header {
+  width: 100%;
+  position: absolute;
+  color: #ffffff;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 768px;
+  background: rgba(198, 108, 73, 0.4);
+}
+
+header p,
+h2 {
+  position: relative;
+  margin: 0;
+}
+
+header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 36px;
+  padding-bottom: 50px;
+}
+
+.header-p3 {
+  text-decoration: underline;
+}
+
+.progress-bar {
+  margin-bottom: 7px;
+  background-color: #f5d6ab;
+}
+
+.progress-value {
+  background-color: #c66c49;
+}
+
+.skills {
+  width: 100%;
+  background-color: #fffaf2;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #fffaf2;
+  position: absolute;
+  width: 100%;
+  height: 360px;
+  left: -1px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 1000px) {
   /* header */
   header {
-    background: url("/image/bg\(2\).png");
+    background: url("./image/bg\(2\).png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
     height: 275px;
-    position: absolute;
-    color: #ffffff;
+  }
+
+  .content {
+    height: 275px;
+  }
+
+  header p,
+  h2 {
+    text-align: center;
+  }
+
+  header h2 {
+    padding-top: 36px;
+    padding-bottom: 50px;
+  }
+
+  .header-p1 {
+    padding-bottom: 13px;
+    font-size: 20px;
+  }
+
+  .header-p2 {
+    padding-bottom: 41px;
+    font-size: 13px;
+  }
+
+  .header-p3 {
+    padding-bottom: 50px;
+    font-size: 13px;
   }
 
   .navbar {
@@ -40,43 +135,6 @@ main {
     width: 25px;
     height: 1.5px;
     margin-bottom: 4.5px;
-  }
-
-  .content {
-    position: absolute;
-    width: 100%;
-    height: 275px;
-    background: rgba(198, 108, 73, 0.4);
-  }
-
-  header p,
-  h2 {
-    position: relative;
-    text-align: center;
-    margin: 0;
-  }
-
-  header h2 {
-    font-size: 24px;
-    font-weight: bold;
-    padding-top: 36px;
-    padding-bottom: 50px;
-  }
-
-  .header-p1 {
-    padding-bottom: 13px;
-    font-size: 20px;
-  }
-
-  .header-p2 {
-    padding-bottom: 41px;
-    font-size: 13px;
-  }
-
-  .header-p3 {
-    padding-bottom: 50px;
-    text-decoration: underline;
-    font-size: 13px;
   }
 
   /* about */
@@ -160,20 +218,12 @@ main {
   }
 
   .progress-bar {
-    margin-bottom: 7px;
     width: 211px;
     height: 18px;
-    background-color: #f5d6ab;
   }
 
   .progress-value {
     height: 18px;
-    background-color: #c66c49;
-  }
-
-  .skills {
-    width: 100%;
-    background-color: #fffaf2;
   }
 
   .skills h2 {
@@ -201,9 +251,6 @@ main {
   .images {
     width: 308px;
     height: 196px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
   }
 
   .portfolio h2 {
@@ -243,11 +290,7 @@ main {
 
   /* footer */
   footer {
-    background-color: #fffaf2;
-    position: absolute;
-    width: 100%;
     height: 360px;
-    left: -1px;
   }
 
   .dekstop-container {
@@ -264,17 +307,12 @@ main {
   }
 
   .footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     margin-bottom: 10px;
   }
 
   .footer-info {
     padding-right: 32px;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 
   .child {
@@ -287,7 +325,6 @@ main {
   }
 }
 
-/*  */
 
 @media (min-width: 1001px) {
 
@@ -297,46 +334,14 @@ main {
 
   /* header */
   header {
-    background: url("/image/bg\(1\).png");
+    background: url("./image/bg\(1\).png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
     height: 768px;
-    position: absolute;
-    color: #ffffff;
-  }
-
-  header a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 18px;
-  }
-
-  header a:link {
-    color: #ffffff;
-  }
-
-  header a:visited {
-    color: #ffffff;
-  }
-
-  header a:focus {
-    color: #ffffff;
-  }
-  
-  header a:hover {
-    color: #ffffff;
-  }
-  
-  header a:active {
-    color: #ffffff;
   }
 
   .content {
-    position: absolute;
-    width: 100%;
     height: 768px;
-    background: rgba(198, 108, 73, 0.4);
   }
 
   .desktop-header-h2 {
@@ -346,24 +351,11 @@ main {
     padding: 93px 166px 145px 166px;
   }
 
-  .desktop-navbar {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .desktop-navbar a {
-    padding-right: 60px;
-  }
-
   header p {
-    position: relative;
     padding-left: 0px;
-    margin: 0;
   }
 
   header h2 {
-    font-size: 24px;
-    font-weight: bold;
     text-align: center;
     padding-left: 0;
   }
@@ -382,10 +374,44 @@ main {
 
   .header-p3 {
     padding-bottom: 240px;
-    text-decoration: underline;
     font-size: 18px;
     padding-left: 165px;
   }
+
+  .desktop-navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .desktop-navbar a {
+    padding-right: 60px;
+  }
+
+  header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    }
+  
+    header a:link {
+      color: #ffffff;
+    }
+  
+    header a:visited {
+      color: #ffffff;
+    }
+  
+    header a:focus {
+      color: #ffffff;
+    }
+    
+    header a:hover {
+      color: #ffffff;
+    }
+    
+    header a:active {
+      color: #ffffff;
+    }
 
   /* about */
   .about {
@@ -466,20 +492,12 @@ main {
   }
 
   .progress-bar {
-    margin-bottom: 7px;
     width: 446px;
     height: 24px;
-    background-color: #f5d6ab;
   }
 
   .progress-value {
     height: 24px;
-    background-color: #c66c49;
-  }
-
-  .skills {
-    width: 100%;
-    background-color: #fffaf2;
   }
 
   .skills h2 {
@@ -508,9 +526,6 @@ main {
   .images {
     width: 520px;
     height: 520px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
   }
 
   .portfolio h2 {
@@ -550,12 +565,8 @@ main {
   }
 
   /* footer */
-
   footer {
-    background-color: #fffaf2;
-    position: absolute;
-    width: 100%;
-    left: -1px;
+    height: 528px;
   }
 
   footer h2 {
@@ -572,17 +583,9 @@ main {
     display: none;
   }
 
-  .footer-content {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-  
   .footer-info {
     position: relative;
-    display: flex;
     justify-content: flex-start;
-    align-items: center;
   }
 
   .dekstop-container {
